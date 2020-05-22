@@ -1,9 +1,4 @@
 // ###### Config options ################
-
-
-
-// #######################################
-
 #define BUILDING_DEF_STRATEGY_LIB 1
 
 #include "../simulador/Asedio.h"
