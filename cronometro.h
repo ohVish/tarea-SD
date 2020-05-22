@@ -11,7 +11,7 @@ const double pps = CLOCKS_PER_SEC;
 
 class cronometro {
 public:
-  cronometro(): activo(false) {}
+  inline cronometro(): activo(false) {}
   void activar() { activo = true; t0 = clock(); }
   void parar() { if (activo) { t1 = clock(); activo = false; } }
   double tiempo() const { return ((activo ? clock() : t1) - t0) / pps; }
